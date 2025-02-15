@@ -1,36 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: 'Nunito', sans-serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 16px;
+}
+
+.navbar-container {
+    color: white;
+    width: 100vw;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo-container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+nav .logo-container span{
+    margin-left: 10px;
+}
+
+.header-container {
+    text-align: center;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    margin-bottom: 16px;
 }
-.search{
+
+.image-container img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 8px;
+    color: white;
+}
+
+.input-container {
     display: flex;
     align-items: center;
-    background-color: #333;
-    border-radius: 20px;
-    padding: 10px 15px;
-    width: 300px;
+    background-color: #303030;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 24px;
+    width: 100%;
 }
-.search input {
+
+.input-container input {
+    width: 100%;
+    background: transparent;
+    color: white;
     flex: 1;
-    background: none;
+    padding: 8px;
     border: none;
     outline: none;
-    color: white;
-    font-size: 14px;
 }
-.search input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-.search button {
-    background: none;
+
+.input-container button {
+    background-color: #6D6D6E;
+    padding: 12px;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
 }
-.search button svg {
-    fill: #111;
-    width: 20px;
-    height: 20px;
+
+.send-icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.icon-button-navbar {
+    color: white;
+    font-size: 1.4em;
+    display: flex;
+    gap: 10px;
 }
