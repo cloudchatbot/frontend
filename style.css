@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* DARK MODE */
 body {
     font-family: 'Nunito', sans-serif;
     background-color: black;
@@ -16,6 +17,7 @@ body {
     padding: 16px;
 }
 
+/* HEADER */
 .navbar-container {
     color: white;
     width: 100vw;
@@ -25,29 +27,48 @@ body {
     justify-content: space-between;
 }
 
-nav .logo-container {
+header .logo-container {
     display: flex;
     align-items: center;
-    margin-top: 8px;
 }
 
-nav .logo-container span{
+header .logo-container img {
+    width: 50px;
+}
+
+header .logo-container span{
     margin-left: 10px;
 }
 
-.header-container {
-    text-align: center;
-    width: 90%;
-    height: 100vh;
+.icon-button-header {
+    color: white;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.icon-button {
+    cursor: pointer;
+}
+
+.icon-button-header #sun{
+    width: 35px;
+}
+
+.icon-button-header #resetIcon{
+    width: 25px;
+}
+
+/* MAIN CONTAINER */
+
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
+    text-align: center;
+    width: 90%;
+    height: 100vh;
 }
 
 .image-container img {
@@ -55,12 +76,30 @@ nav .logo-container span{
     height: auto;
 }
 
-p {
-    font-size: 1.25rem;
+.content-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+}
+.content-main span {
+    display: block;
+    font-weight: 800;
+}
+
+.content-main p {
+    font-size: 2rem;
     font-weight: 600;
-    margin-top: 8px;
+    margin-top: 35px;
     color: white;
 }
+
+.content-main span {
+    font-size: 1.5rem;
+}
+
+/* INPUT CONTAINER */
 
 .input-container {
     display: flex;
@@ -83,6 +122,7 @@ p {
 }
 
 .input-container button {
+    display: flex;
     background-color: #6D6D6E;
     padding: 12px;
     border: none;
@@ -90,15 +130,6 @@ p {
     cursor: pointer;
 }
 
-.send-icon {
-    width: 24px;
-    height: 24px;
-    color: white;
-}
-
-.icon-button-navbar {
-    color: white;
-    font-size: 1.4em;
-    display: flex;
-    gap: 10px;
+.input-container #sendIcon{
+    width: 25px;
 }
