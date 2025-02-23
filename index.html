@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +7,32 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
-    <nav class="navbar-container">
+    <header class="navbar-container">
         <div class="logo-container">
-            <img src="./assets/icons/Toucan-icon.png" alt="icon">
+            <img src="./assets/img/tucanoLight.svg" alt="icon">
             <span>TucanoBOT</span>
         </div>
-        <div class="icon-button-navbar">
-            <i class="fas fa-sun"></i>  
-            <i class="fas fa-rotate-right"></i>
+        <div class="icon-button-header">
+            <img src="assets/icons/sun.svg" alt="botão do modo claro" id="sun" class="icon-button">
+            <img src="assets/icons/reset.svg" alt="botão do modo escuro" id="resetIcon" class="icon-button"></img>
         </div>
-    </nav>
-
-    <header class="header-container">
-        <div class="content">
+    </header>
+    <main class="main-container">
+        <div class="content-main">
             <div class="image-container">
-                <img src="./assets/img/Toucan-background.png" alt="TucanoBOT">
+                <img src="./assets/img/tucanoLight.svg" alt="TucanoBOT">
             </div>
-            <p>Kreeeek, como o tucano pode te ajudar hoje?</p>
+            <p><span>*Kreeeek*</span> Como o tucano pode te ajudar hoje?</p>
         </div>
         <div class="input-container">
             <input type="text" placeholder="Olá, userName. Como posso te ajudar?">
             <button>
-                <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 2L11 13" />
-                    <path d="M22 2L15 22l-4-9-9-4 22-7z" />
-                </svg>
+                <img src="assets/icons/sendIcon.svg" alt="enviar texto" id="sendIcon">
             </button>
         </div>
-    </header>
+    </main>
 </body>
 
 </html>
