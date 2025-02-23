@@ -133,3 +133,41 @@ header .logo-container span{
 .input-container #sendIcon{
     width: 25px;
 }
+
+.chat-container{
+    width: 100%;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto ;
+    gap:10px;
+    padding: 10px;
+   
+
+}
+
+.chat-baloes{
+    max-width: 70%;
+    padding: 12px;
+    border-radius: 12px;
+    word-wrap: break-word;
+    font-size: 1rem; 
+    max-width: 70%;
+    
+}
+
+.mensagens-usuario{
+    background-color: #05F26C;
+    color: white;
+    align-self: flex-end;
+}
+
+.mensagens-bot{
+    background-color: white;
+    color: black;
+    align-self: flex-start;
+}
+
+.validat-mensagem .content-main{
+    display: none;
+}
