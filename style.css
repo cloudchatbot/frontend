@@ -5,10 +5,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --white1: #ffffff;
+    --white2: #F3F3F3;
+    --gray1: #C4C4C4;
+    --gray2: #6D6D6E;
+    --gray3: #303030;
+    --black1: #000000;
+    --green: #05F26C;
+
+}
+
 /* DARK MODE */
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: black;
+    background-color: var(--black1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +30,7 @@ body {
 
 /* HEADER */
 .navbar-container {
-    color: white;
+    color: var(--white1);
     width: 100vw;
     padding: 0 8%;
     display: flex;
@@ -38,10 +49,11 @@ header .logo-container img {
 
 header .logo-container span{
     margin-left: 10px;
+    font-weight: 700;
 }
 
 .icon-button-header {
-    color: white;
+    color: var(--white1);
     font-size: 1.4em;
     display: flex;
     align-items: center;
@@ -92,7 +104,7 @@ header .logo-container span{
     font-size: 2rem;
     font-weight: 600;
     margin-top: 35px;
-    color: white;
+    color: var(--white1);
 }
 
 .content-main span {
@@ -104,7 +116,7 @@ header .logo-container span{
 .input-container {
     display: flex;
     align-items: center;
-    background-color: #303030;
+    background-color: var(--gray3);
     padding: 8px;
     border-radius: 8px;
     margin-top: 24px;
@@ -114,7 +126,7 @@ header .logo-container span{
 .input-container input {
     width: 100%;
     background: transparent;
-    color: white;
+    color: var(--white1);
     flex: 1;
     padding: 8px;
     border: none;
@@ -123,7 +135,7 @@ header .logo-container span{
 
 .input-container button {
     display: flex;
-    background-color: #6D6D6E;
+    background-color: var(--gray2);
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -132,4 +144,26 @@ header .logo-container span{
 
 .input-container #sendIcon{
     width: 25px;
+}
+
+#sendButton {
+    background-color: var(--gray2);
+}
+#sendButton:hover {
+    background-color: var(--green);
+}
+
+/* LIGHT MODE */
+
+.lightModeText {
+    color: var(--black1) !important;
+}
+.lightModeBG {
+    background-color: var(--white1);
+}
+.lightModeInput {
+    background-color: var(--white2);
+}
+.lightModeTextInput {
+    color: var(--black1) !important;
 }
