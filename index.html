@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatBot</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TucanoBOT</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="search">
-        <input type="text" placeholder="Olá, userName. Como posso te ajudar?">
-        <button>
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" />
-            </svg>
-        </button>
-    </div>
-    
+    <header class="navbar-container">
+        <div class="logo-container">
+            <img src="./assets/img/tucanoLight.svg" alt="icon">
+            <span>TucanoBOT</span>
+        </div>
+        <div class="icon-button-header">
+            <img src="assets/icons/sun.svg" alt="botão do modo claro" id="sun" class="icon-button">
+            <img src="assets/icons/reset.svg" alt="botão do modo escuro" id="resetIcon" class="icon-button"></img>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="content-main">
+            <div class="image-container">
+                <img src="./assets/img/tucanoLight.svg" alt="TucanoBOT">
+            </div>
+            <p><span>*Kreeeek*</span> Como o tucano pode te ajudar hoje?</p>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Olá, userName. Como posso te ajudar?">
+            <button>
+                <img src="assets/icons/sendIcon.svg" alt="enviar texto" id="sendIcon">
+            </button>
+        </div>
+    </main>
 </body>
+
 </html>
