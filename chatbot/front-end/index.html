@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TucanoBOT</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>YourBot</title>
+    <link rel="stylesheet" href="./static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="static/imgs/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="navbar-container">
         <div class="logo-container">
-            <img src="./assets/img/yourBot.svg" alt="icon" class="logo">
-            <span>TucanoBOT</span>
+            <img src="static/imgs/yourBot.svg" alt="icon" class="logo">
+            <span>YourBot</span>
         </div>
         <div class="icon-button-header">
             <div class="icon-button-container">
-                <img src="assets/icons/admUser.svg" alt="" class="icon-button">
+                <img src="static/icons/admUser.svg" alt="" class="icon-button">
             </div>
         </div>
     </header>
     <main class="main-container">
         <div class="content-main">
             <div class="image-container">
-                <img src="./assets/img/yourBot.svg" alt="TucanoBOT" class="logo">
+                <img src="static/imgs/yourBot.svg" alt="TucanoBOT" class="logo">
             </div>
             <p><span>Bem-vindo ao YourBot!</span>Envie os seus arquivos e receba respostas personalizadas</p>
         </div>
@@ -32,24 +32,25 @@
 
         <div class="input-container">
 
-            <input type="text" placeholder="Olá, userName. Como posso te ajudar?" id="input">
+            <input type="text" placeholder="Envie seus arquivos para começar!" id="input">
+
+            <div id="fileNameDisplay"></div> <!--Elemento oculto que mostra o nome do arquivo selecionado-->
+
             <button id="sendPdfButton">
-                <img src="assets/icons/pdfSendButton.svg" alt="enviar texto" id="sendPdf">
+                <img src="static/icons/pdfSendButton.svg" alt="enviar texto" id="sendPdf">
             </button>
 
             <!-- INPUT OCULTO PARA ENVIO DO PDF -->
-             <input type="file" id="pdfInput" accept=".pdf">
-
-             <div id="fileNameDisplay"></div>
+            <input type="file" id="pdfInput" accept=".pdf">
 
 
             <button id="sendButton">
-                <img src="assets/icons/sendIcon.svg" alt="enviar texto" id="sendText">
+                <img src="static/icons/sendIcon.svg" alt="enviar texto" id="sendText">
             </button>
         </div>
     </main>
-    <script src="assets/script/main.js"></script>
-    <script src="assets/script/baloes.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/baloes.js"></script>
 </body>
 
 </html>
