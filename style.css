@@ -6,20 +6,18 @@
 }
 
 :root {
-    --white1: #ffffff;
-    --white2: #F3F3F3;
-    --gray1: #C4C4C4;
-    --gray2: #6D6D6E;
-    --gray3: #303030;
-    --black1: #000000;
-    --green: #05F26C;
-
+    --background: #ffffff;
+    --text: #000000;
+    --input: #F3F3F3;
+    --button: #515151;
+    --button-active: #529954;
+    
 }
 
 /* DARK MODE */
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: var(--black1);
+    color: var(--text);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +28,7 @@ body {
 
 /* HEADER */
 .navbar-container {
-    color: var(--white1);
+    color: var(--text);
     width: 100vw;
     padding: 0 8%;
     display: flex;
@@ -53,23 +51,25 @@ header .logo-container span{
 }
 
 .icon-button-header {
-    color: var(--white1);
+    color: var(--text);
     font-size: 1.4em;
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 40px;
 }
 
-.icon-button {
+.icon-button-container {
+    display: flex;
+    justify-content: center;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid #000000;
 }
-
-.icon-button-header #sun{
-    width: 35px;
-}
-
-.icon-button-header #resetIcon{
-    width: 25px;
+.icon-button-container:hover{
+    background-color: var(--button-active);
 }
 
 /* MAIN CONTAINER */
@@ -93,30 +93,28 @@ header .logo-container span{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: red; */
+    /* text-color: red; */
 }
-.content-main span {
-    display: block;
-    font-weight: 800;
-}
-
 .content-main p {
     font-size: 2rem;
     font-weight: 600;
     margin-top: 35px;
-    color: var(--white1);
+    line-height: 35px;
+    color: var(--text);
 }
 
 .content-main span {
-    font-size: 1.5rem;
+    display: block;
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 /* INPUT CONTAINER */
 
 .input-container {
+    background-color: var(--input);
     display: flex;
     align-items: center;
-    background-color: var(--gray3);
     padding: 8px;
     border-radius: 8px;
     margin-top: 24px;
@@ -125,45 +123,83 @@ header .logo-container span{
 
 .input-container input {
     width: 100%;
-    background: transparent;
-    color: var(--white1);
+    background-color: transparent;
+    color: var(--text);
     flex: 1;
     padding: 8px;
     border: none;
     outline: none;
 }
-
+.input-container {
+    gap: 10px;
+}
 .input-container button {
     display: flex;
-    background-color: var(--gray2);
-    padding: 12px;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+}
+.input-container img {
+    width: 30px;
+    height: 30px;
 }
 
-.input-container #sendIcon{
-    width: 25px;
+#sendPdfButton {
+    border: 1px solid var(--button)
 }
-
 #sendButton {
-    background-color: var(--gray2);
+    background-color: var(--button);
+    border: 1px solid var(--button);
 }
+
+#sendPdfButton:hover,
 #sendButton:hover {
-    background-color: var(--green);
+    background-color: var(--button-active);
+    border: 1px solid var(--button-active);
 }
 
-/* LIGHT MODE */
+#pdfInput {
+    display: none;
+}
 
-.lightModeText {
-    color: var(--black1) !important;
+/* BALLONS */
+
+.chat-container{
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto ;
+    gap:20px;
+    padding: 10px;
+    /* text-color: red; */
+
 }
-.lightModeBG {
-    background-color: var(--white1);
+
+.chat-baloes{
+    margin-top: 30px;
+    max-width: 70%;
+    padding: 12px;
+    word-wrap: break-word;
+    font-size: 1rem; 
+    max-width: 70%;
 }
-.lightModeInput {
-    background-color: var(--white2);
+
+.mensagens-usuario{
+    color: #05F26C;
+    border-radius: 12px 12px 0px 12px;
+    color: white;
+    align-self: flex-end;
 }
-.lightModeTextInput {
-    color: var(--black1) !important;
+
+.mensagens-bot{
+    border-radius: 12px 12px 12px 0px;
+    color: white;
+    color: black;
+    align-self: flex-start;
+}
+
+.validat-mensagem .content-main{
+    display: none;
 }
