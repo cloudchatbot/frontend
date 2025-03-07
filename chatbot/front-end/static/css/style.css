@@ -131,19 +131,21 @@ header .logo-container span{
     outline: none;
 }
 .input-container {
-    gap: 10px;
+    gap: 5px;
 }
 .input-container button {
     display: flex;
     border: none;
     cursor: pointer;
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
 }
 .input-container img {
     width: 30px;
     height: 30px;
 }
+
+/* BUTTONS */
 
 #sendPdfButton {
     border: 1px solid var(--button)
@@ -163,6 +165,12 @@ header .logo-container span{
     display: none;
 }
 
+/* FILE NAME DISPLAY */
+
+#fileNameDisplay {
+    margin-right: 10px;
+}
+
 /* BALLONS */
 
 .chat-container{
@@ -173,8 +181,8 @@ header .logo-container span{
     overflow-y:auto ;
     gap:20px;
     padding: 10px;
-    /* text-color: red; */
-
+    /* background-color: red; */
+   
 }
 
 .chat-baloes{
@@ -184,22 +192,42 @@ header .logo-container span{
     word-wrap: break-word;
     font-size: 1rem; 
     max-width: 70%;
+    ;
 }
 
 .mensagens-usuario{
-    color: #05F26C;
-    border-radius: 12px 12px 0px 12px;
+    border-radius: 12px 0px 12px 12px;
     color: white;
     align-self: flex-end;
+    background-color: var(--button-active)
 }
 
 .mensagens-bot{
-    border-radius: 12px 12px 12px 0px;
+    border-radius: 0px 12px 12px 12px;
     color: white;
-    color: black;
     align-self: flex-start;
+    background-color: var(--button);
 }
 
 .validat-mensagem .content-main{
     display: none;
+}
+
+
+@media screen and (min-width: 375px) and (max-width:460px) {
+    input::placeholder{ 
+        font-size: 12px;   
+    }
+
+    .input-container button {
+        display: flex;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    .input-container img {
+        width: 25px;
+        height: 25px;
+    }
 }
