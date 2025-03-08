@@ -56,4 +56,4 @@ pdfInput.addEventListener("change", displayPdf);
 // Enviar PDF
 sendContent.addEventListener("click", sendPdf)
 
-// Iniciar chat
+
