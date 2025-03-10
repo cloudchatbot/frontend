@@ -1,0 +1,233 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #ffffff;
+    --text: #000000;
+    --input: #F3F3F3;
+    --button: #515151;
+    --button-active: #529954;
+    
+}
+
+/* DARK MODE */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 16px;
+}
+
+/* HEADER */
+.navbar-container {
+    color: var(--text);
+    width: 100vw;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-container img {
+    width: 50px;
+}
+
+header .logo-container span{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.icon-button-header {
+    color: var(--text);
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.icon-button-container {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid #000000;
+}
+.icon-button-container:hover{
+    background-color: var(--button-active);
+}
+
+/* MAIN CONTAINER */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
+    height: 100vh;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+}
+
+.content-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-color: red; */
+}
+.content-main p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 35px;
+    line-height: 35px;
+    color: var(--text);
+}
+
+.content-main span {
+    display: block;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* INPUT CONTAINER */
+
+.input-container {
+    background-color: var(--input);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    background-color: transparent;
+    color: var(--text);
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+.input-container {
+    gap: 5px;
+}
+.input-container button {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+}
+.input-container img {
+    width: 30px;
+    height: 30px;
+}
+
+/* BUTTONS */
+
+#sendPdfButton {
+    border: 1px solid var(--button)
+}
+#sendButton {
+    background-color: var(--button);
+    border: 1px solid var(--button);
+}
+
+#sendPdfButton:hover,
+#sendButton:hover {
+    background-color: var(--button-active);
+    border: 1px solid var(--button-active);
+}
+
+#pdfInput {
+    display: none;
+}
+
+/* FILE NAME DISPLAY */
+
+#fileNameDisplay {
+    margin-right: 10px;
+}
+
+/* BALLONS */
+
+.chat-container{
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto ;
+    gap:20px;
+    padding: 10px;
+    /* background-color: red; */
+   
+}
+
+.chat-baloes{
+    margin-top: 30px;
+    max-width: 70%;
+    padding: 12px;
+    word-wrap: break-word;
+    font-size: 1rem; 
+    max-width: 70%;
+    ;
+}
+
+.mensagens-usuario{
+    border-radius: 12px 0px 12px 12px;
+    color: white;
+    align-self: flex-end;
+    background-color: var(--button-active)
+}
+
+.mensagens-bot{
+    border-radius: 0px 12px 12px 12px;
+    color: white;
+    align-self: flex-start;
+    background-color: var(--button);
+}
+
+.validat-mensagem .content-main{
+    display: none;
+}
+
+
+@media screen and (min-width: 375px) and (max-width:460px) {
+    input::placeholder{ 
+        font-size: 12px;   
+    }
+
+    .input-container button {
+        display: flex;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    .input-container img {
+        width: 25px;
+        height: 25px;
+    }
+}
